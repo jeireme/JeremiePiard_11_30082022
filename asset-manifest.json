@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/JeremiePiard_12_30082022/static/js/main.9d21b630.js",
+    "main.js": "/JeremiePiard_12_30082022/static/js/main.47719d3c.js",
     "static/media/photoUser18.jpg": "/JeremiePiard_12_30082022/static/media/photoUser18.253778d57ecd4c324fa7.jpg",
     "static/media/photoUser12.jpg": "/JeremiePiard_12_30082022/static/media/photoUser12.669a9c32da519948264c.jpg",
     "static/media/logo.svg": "/JeremiePiard_12_30082022/static/media/logo.7e048ed489e76ab60168bb8878645aad.svg",
@@ -14,9 +14,9 @@
     "static/media/yoga.svg": "/JeremiePiard_12_30082022/static/media/yoga.76760efccddf14928ee9263744c1b6e6.svg",
     "static/media/calories-icon.svg": "/JeremiePiard_12_30082022/static/media/calories-icon.5db5a3aff9bd8f441f49792782c8262e.svg",
     "static/media/bodybuilding.svg": "/JeremiePiard_12_30082022/static/media/bodybuilding.9d22814b98d0ca386d9ddacded4eae80.svg",
-    "main.9d21b630.js.map": "/JeremiePiard_12_30082022/static/js/main.9d21b630.js.map"
+    "main.47719d3c.js.map": "/JeremiePiard_12_30082022/static/js/main.47719d3c.js.map"
   },
   "entrypoints": [
-    "static/js/main.9d21b630.js"
+    "static/js/main.47719d3c.js"
   ]
 }
