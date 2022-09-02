@@ -25,7 +25,7 @@ const StyledLink = styled(Link)`
 function Navbar() {
   return (
     <NavbarContainer>
-      <StyledLink to="/">
+      <StyledLink to="/JeremiePiard_12_30082022/">
         <Logo src={logo} alt="Logo du site" />
       </StyledLink>
       <StyledLink to="#">Accueil</StyledLink>
