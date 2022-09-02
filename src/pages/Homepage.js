@@ -32,13 +32,23 @@ const HomepageContainer = styled.div`
 const GlobalContainer = styled.div`
   /* background-color: pink; */
   padding: 60px 95px; // ! régler le padding
+  @media screen and (max-width: 1200px) {
+    padding: 60px 0; // ! régler le padding
+    margin: auto;
+    width: fit-content;
+  }
 `;
 
 const HeaderContainer = styled.div`
   /* background-color: lightblue; */
+  color: black;
   width: 100%;
   height: 200px;
-  color: black;
+  @media screen and (max-width: 1200px) {
+    /* height: fit-content; */
+    width: fit-content;
+    margin-right: 0;
+  }
 `;
 
 // * GLOBAR DATA CONTAINER
@@ -48,6 +58,12 @@ const DataContainer = styled.div`
   height: 850px;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+    width: fit-content;
+  }
 `;
 
 const NutrimentDataContainer = styled.div`
@@ -59,6 +75,14 @@ const NutrimentDataContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 1200px) {
+    /* background-color: black; */
+    display: grid;
+    width: 67vw;
+    height: fit-content;
+    margin: 40px auto;
+    grid-template: 200px 200px / 300px 300px;
+  }
 `;
 
 const NutrimentData = styled.div`
@@ -66,7 +90,12 @@ const NutrimentData = styled.div`
   display: flex;
   border-radius: 5px;
   width: 90%;
-  height: 170px;  // ! height des nutriments data
+  height: 170px; // ! height des nutriments data
+  @media screen and (max-width: 1200px) {
+    /* background-color: black; */
+    width: 300px;
+    flex-direction: row;
+  }
 `;
 
 const NutrimentDataInfos = styled.div`
@@ -103,14 +132,20 @@ const Icon = styled.img`
   margin: 10px;
 `;
 
+// !! GLOBAL GRAPHIC
 const GraphicsContainer = styled.div`
   /* border: yellowgreen solid 1px; */
-  /* background-color: yellowgreen; */
+  /* background-color: yellow; */
   width: 1200px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 1200px) {
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+  }
 `;
 
 const BarChartContainer = styled.div`
@@ -119,8 +154,13 @@ const BarChartContainer = styled.div`
   border-radius: 5px;
   width: 100%;
   height: 55%;
+  @media screen and (max-width: 1200px) {
+    width: 800px;
+    height: 400px;
+  }
 `;
 
+// !! LES 3 GRAPHIQUES
 const GraphicsFlexContainer = styled.div`
   /* background-color: yellowgreen; */
   /* border: blue solid 1px; */
@@ -128,6 +168,10 @@ const GraphicsFlexContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   height: 40%;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    margin-top: 50px;
+  }
 `;
 
 const LineChartContainer = styled.div`
@@ -135,6 +179,10 @@ const LineChartContainer = styled.div`
   border-radius: 5px;
   width: 31%;
   height: 100%;
+  @media screen and (max-width: 1200px) {
+    width: 250px;
+    height: 250px;
+  }
 `;
 
 const RadarChartContainer = styled.div`
@@ -143,6 +191,10 @@ const RadarChartContainer = styled.div`
   border-radius: 5px;
   width: 31%;
   height: 100%;
+  @media screen and (max-width: 1200px) {
+    width: 250px;
+    height: 250px;
+  }
 `;
 
 const RadialBarChartContainer = styled.div`
@@ -150,6 +202,10 @@ const RadialBarChartContainer = styled.div`
   border-radius: 5px;
   width: 31%;
   height: 100%;
+  @media screen and (max-width: 1200px) {
+    width: 250px;
+    height: 250px;
+  }
 `;
 
 function Homepage() {
