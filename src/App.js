@@ -13,7 +13,7 @@ function App() {
     <AppContainer>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Connexion />} />
+          <Route exact path="/JeremiePiard_12_30082022/" element={<Connexion />} />
           <Route
             path="/JeremiePiard_12_30082022/user/:id"
             element={<Homepage />}
