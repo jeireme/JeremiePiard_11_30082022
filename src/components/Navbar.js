@@ -25,7 +25,9 @@ const StyledLink = styled(Link)`
 function Navbar() {
   return (
     <NavbarContainer>
-      <Logo src={logo} alt="Logo du site" />
+      <StyledLink to="/">
+        <Logo src={logo} alt="Logo du site" />
+      </StyledLink>
       <StyledLink to="#">Accueil</StyledLink>
       <StyledLink to="#">Profil</StyledLink>
       <StyledLink to="#">Réglage</StyledLink>

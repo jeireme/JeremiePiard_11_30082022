@@ -68,7 +68,7 @@ function Connexion() {
           >
             <Profile>
               <ProfilePicture src={photoUser12} alt="Photo de profil de Karl" />
-              <p style={{ fontSize: "30px", margin: "15px 0" }}>Karl</p>
+              <p style={{ fontSize: "30px", fontWeight: "500", margin: "15px 0" }}>Karl</p>
             </Profile>
           </StyledLink>
           <StyledLink
@@ -80,7 +80,7 @@ function Connexion() {
                 src={photoUser18}
                 alt="Photo de profil de Cecilia"
               />
-              <p style={{ fontSize: "30px", margin: "15px 0" }}>Cecilia</p>
+              <p style={{ fontSize: "30px", fontWeight: "500", margin: "15px 0" }}>Cecilia</p>
             </Profile>
           </StyledLink>
           <StyledLink to={"/JeremiePiard_12_12082022/new-user"} key={"newUser"}>
