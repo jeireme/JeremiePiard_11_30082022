@@ -1,46 +1,13 @@
 import React from "react";
-import logo from "../assets/logo.svg";
+import logo from "../../assets/logo.svg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import photoUser12 from "../assets/photoUser12.jpg";
-import photoUser18 from "../assets/photoUser18.jpg";
-import addButton from "../assets/addButton.svg";
-
-const ConnexionContainer = styled.div`
-  background-color: #f2f1f8;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 150px;
-`;
-
-const ProfilesContainer = styled.div`
-  display: flex;
-  margin-top: 30px;
-`;
-
-const Profile = styled.div`
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  height: fit-content;
-  padding: 10px 10px 0 10px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-`;
-
-const ProfilePicture = styled.img`
-  width: 200px;
-  height: 200px;
-`;
+import photoUser12 from "../../assets/photoUser12.jpg";
+import photoUser18 from "../../assets/photoUser18.jpg";
+import addButton from "../../assets/addButton.svg";
+import "./Connexion.css";
 
 const StyledLink = styled(Link)`
-  /* border: blue solid 1px; */
   text-decoration: none;
   margin: 10px 20px 10px 0px;
   color: black;
@@ -48,7 +15,7 @@ const StyledLink = styled(Link)`
 
 function Connexion() {
   return (
-    <ConnexionContainer>
+    <div className="connexionContainer">
       <div>
         <div>
           <img src={logo} alt="Logo du site" />
@@ -61,30 +28,51 @@ function Connexion() {
             Cliquez sur votre profil ou sur Ajouter un compte.
           </h4>
         </div>
-        <ProfilesContainer>
+        <div className="profilesContainer">
           <StyledLink
             to={"/JeremiePiard_12_30082022/user/" + 12}
             key={"user12"}
           >
-            <Profile>
-              <ProfilePicture src={photoUser12} alt="Photo de profil de Karl" />
-              <p style={{ fontSize: "30px", fontWeight: "500", margin: "15px 0" }}>Karl</p>
-            </Profile>
+            <div className="profile">
+              <img
+                className="profilePicture"
+                src={photoUser12}
+                alt="Profil de Karl"
+              />
+              <p
+                style={{
+                  fontSize: "30px",
+                  fontWeight: "500",
+                  margin: "15px 0",
+                }}
+              >
+                Karl
+              </p>
+            </div>
           </StyledLink>
           <StyledLink
             to={"/JeremiePiard_12_30082022/user/" + 18}
             key={"user18"}
           >
-            <Profile>
-              <ProfilePicture
+            <div className="profile">
+              <img
+                className="profilePicture"
                 src={photoUser18}
-                alt="Photo de profil de Cecilia"
+                alt="Profil de Cecilia"
               />
-              <p style={{ fontSize: "30px", fontWeight: "500", margin: "15px 0" }}>Cecilia</p>
-            </Profile>
+              <p
+                style={{
+                  fontSize: "30px",
+                  fontWeight: "500",
+                  margin: "15px 0",
+                }}
+              >
+                Cecilia
+              </p>
+            </div>
           </StyledLink>
           <StyledLink to={"/JeremiePiard_12_12082022/new-user"} key={"newUser"}>
-            <Profile style={{ width: " 200px" }}>
+            <div className="profile" style={{ width: " 200px" }}>
               <img
                 src={addButton}
                 alt="Bouton nouveau profil"
@@ -105,11 +93,11 @@ function Connexion() {
               >
                 Ajouter un compte
               </p>
-            </Profile>
+            </div>
           </StyledLink>
-        </ProfilesContainer>
+        </div>
       </div>
-    </ConnexionContainer>
+    </div>
   );
 }
 

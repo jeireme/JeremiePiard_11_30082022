@@ -7,6 +7,9 @@ import {
 } from "recharts";
 
 function RadialBarChartGraphic({ user }) {
+  // console.clear();
+  console.log("COUCOUu");
+  
   const data = [
     {
       name: "Score",
@@ -25,11 +28,20 @@ function RadialBarChartGraphic({ user }) {
         endAngle={-270}
       >
         <PolarAngleAxis type="number" domain={[0, 100]} tick={false} />
-        <RadialBar background dataKey="value" fill="#ff0000" />
+        <RadialBar
+          background
+          dataKey="value"
+          fill="#ff0000"
+          cornerRadius={20}
+        />
         <text
-          x={70}
-          y={50}
-          fontSize="22"
+          // x={70}
+          // y={50}
+          x={(window.innerWidth <= 1200) ? 35 : 70}
+          y={(window.innerWidth <= 1200) ? 25 : 50}
+          fontSize={(window.innerWidth <= 1200) ? "15" : "22"}
+
+          // fontSize="22"
           fontWeight="bold"
           textAnchor="middle"
           dominantBaseline="middle"
@@ -37,8 +49,8 @@ function RadialBarChartGraphic({ user }) {
           Score
         </text>
         <text
-          x={195}
-          y={155}
+          x={(window.innerWidth <= 1200) ? 130 : 195}
+          y={(window.innerWidth <= 1200) ? 110 : 155}
           fontSize="45"
           fontWeight="bold"
           textAnchor="middle"
@@ -47,8 +59,8 @@ function RadialBarChartGraphic({ user }) {
           {user.score * 100}%
         </text>
         <text
-          x={190}
-          y={198}
+          x={(window.innerWidth <= 1200) ? 130 : 190}
+          y={(window.innerWidth <= 1200) ? 145 : 185}
           fontSize="19"
           fontWeight="bold"
           fill="grey"
@@ -58,8 +70,9 @@ function RadialBarChartGraphic({ user }) {
           de votre
         </text>
         <text
-          x={190}
-          y={220}
+          x={(window.innerWidth <= 1200) ? 130 : 190}
+          y={(window.innerWidth <= 1200) ? 165 : 205}
+
           fontSize="19"
           fontWeight="bold"
           fill="grey"

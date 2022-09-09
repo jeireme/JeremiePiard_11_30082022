@@ -39,8 +39,8 @@ function RadarChartGraphic({ user }) {
 
   return (
     <ResponsiveContainer width="100%" height="100%">
-      <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
-        <PolarGrid stroke="#ff0000" />
+      <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data} fill='#FFF'>
+        <PolarGrid radialLines={false} stroke="#FFF" />
         <PolarAngleAxis cy={5} dataKey="subject" />
         <Radar
           name="Mike"

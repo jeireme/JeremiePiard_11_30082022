@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Connexion from "./pages/Connexion";
-import Homepage from "./pages/Homepage";
+import Connexion from "./pages/Connexion/Connexion";
+import Homepage from "./pages/Homepage/Homepage";
 import styled from "styled-components";
 
 const AppContainer = styled.div`

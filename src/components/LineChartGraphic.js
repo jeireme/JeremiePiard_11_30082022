@@ -94,10 +94,10 @@ function LineChartGraphic({ user }) {
           dot={false}
         />
         <text
-          x={30}
+          x={25}
           y={38}
           dominantBaseline="hanging"
-          fontSize="17"
+          fontSize="clamp(0.9rem, 1vw, 18px)"
           fill="#F5F5F5"
         >
           Durée moyenne des sessions

@@ -1,0 +1,221 @@
+.welcomeText {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.homepageContainer {
+
+    /* background-color: blue; */
+    width: 100%;
+    height: 88vh;
+    display: grid;
+    grid-template-columns: 115px 1fr;
+}
+
+.globalContainer {
+    /* background-color: pink; */
+    padding: 60px 95px;
+}
+
+.headerContainer {
+    /* background-color: lightblue; */
+    color: black;
+    width: 100%;
+    height: 200px;
+}
+
+/* GLOBAR DATA CONTAINER */
+.dataContainer {
+    /* background-color: lightgreen; */
+    width: 100%;
+    height: 850px;
+    display: flex;
+    align-items: center;
+}
+
+
+.nutrimentDataContainer {
+    /* border: red solid 1px; */
+    width: 360px;
+    /* ! width des nutriments data */
+    height: 100%;
+    margin: 30px 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nutrimentData {
+    background-color: #fbfbfb;
+    display: flex;
+    border-radius: 5px;
+    width: 90%;
+    height: 170px;
+}
+
+.nutrimentDataInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nutrimentDataQuantity {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.nutrimentDataName {
+    font-size: medium;
+    color: grey;
+}
+
+.iconContainer {
+    /* background-color: pink; */
+    width: 150px;
+    height: 100%;
+    margin-right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.graphicsContainer {
+    /* border: yellowgreen solid 1px; */
+    /* background-color: yellow; */
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barChartContainer {
+    /* border: pink solid 1px; */
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    width: 100%;
+    height: 55%;
+}
+
+/* !! LES 3 GRAPHIQUES */
+.graphicsFlexContainer {
+    /* background-color: yellowgreen; */
+    /* border: blue solid 1px; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+}
+
+.lineChartContainer {
+    background-color: #ff0000;
+    border-radius: 5px;
+    width: 31%;
+    height: 100%;
+}
+
+.radarChartContainer {
+    background-color: #282d30;
+    /* ! couleur de la maquette */
+    /* background-color: #fbfbff; */
+    border-radius: 5px;
+    width: 31%;
+    height: 100%;
+}
+
+.radialBarChartContainer {
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    width: 31%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .globalContainer {
+        padding: 60px 0;
+        /* ! régler le padding */
+        margin: auto;
+        width: fit-content;
+
+    }
+
+    .headerContainer {
+        /* height: fit-content; */
+        width: fit-content;
+        margin-right: 0;
+
+    }
+
+    .dataContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+        width: fit-content;
+
+    }
+
+    .nutrimentDataContainer {
+        /* background-color: black; */
+        display: grid;
+        width: 67vw;
+        height: fit-content;
+        margin: 40px auto;
+        grid-template: 200px 200px / 300px 300px;
+
+    }
+
+    .nutrimentData {
+        /* background-color: black; */
+        width: 300px;
+        flex-direction: row;
+
+    }
+
+    .graphicsContainer {
+        align-items: center;
+        height: fit-content;
+        width: fit-content;
+
+    }
+
+    .barChartContainer {
+        width: 800px;
+        height: 400px;
+
+    }
+
+    .graphicsFlexContainer {
+        width: 100%;
+        margin-top: 50px;
+
+    }
+
+    .lineChartContainer {
+        width: 250px;
+        height: 250px;
+        font-size: 12px;
+    }
+
+    .radarChartContainer {
+        width: 270px;
+        height: 250px;
+        font-size: 12px;
+    }
+
+    .radialBarChartContainer {
+        width: 250px;
+        height: 250px;
+
+    }
+}
