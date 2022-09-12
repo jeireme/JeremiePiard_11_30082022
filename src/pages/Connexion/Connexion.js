@@ -13,6 +13,9 @@ const StyledLink = styled(Link)`
   color: black;
 `;
 
+/**
+ * This is the connexion page of the SportSee app, you can select an account or add a new one
+ */
 function Connexion() {
   return (
     <div className="connexionContainer">

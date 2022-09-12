@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import {
   Radar,
   RadarChart,
@@ -7,6 +8,12 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+/**
+ * Component that render the radar chart
+ * It shows the capacities of the user in 5 categories : cardio, intensity, speed, strengh, endurance and energy
+ * @param {{object}} user Current user on website
+ * @returns void
+ */
 function RadarChartGraphic({ user }) {
   const data = [
     {
@@ -35,11 +42,9 @@ function RadarChartGraphic({ user }) {
     },
   ];
 
-  // ? changer la couleur de PolarAngleAxis
-
   return (
     <ResponsiveContainer width="100%" height="100%">
-      <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data} fill='#FFF'>
+      <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data} fill="#FFF">
         <PolarGrid radialLines={false} stroke="#FFF" />
         <PolarAngleAxis cy={5} dataKey="subject" />
         <Radar
@@ -53,5 +58,9 @@ function RadarChartGraphic({ user }) {
     </ResponsiveContainer>
   );
 }
+
+RadarChartGraphic.propTypes = {
+  user: PropTypes.object,
+};
 
 export default RadarChartGraphic;

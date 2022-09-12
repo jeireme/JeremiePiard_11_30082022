@@ -6,8 +6,6 @@
 }
 
 .homepageContainer {
-
-    /* background-color: blue; */
     width: 100%;
     height: 88vh;
     display: grid;
@@ -15,12 +13,10 @@
 }
 
 .globalContainer {
-    /* background-color: pink; */
     padding: 60px 95px;
 }
 
 .headerContainer {
-    /* background-color: lightblue; */
     color: black;
     width: 100%;
     height: 200px;
@@ -28,18 +24,14 @@
 
 /* GLOBAR DATA CONTAINER */
 .dataContainer {
-    /* background-color: lightgreen; */
     width: 100%;
     height: 850px;
     display: flex;
     align-items: center;
 }
 
-
 .nutrimentDataContainer {
-    /* border: red solid 1px; */
     width: 360px;
-    /* ! width des nutriments data */
     height: 100%;
     margin: 30px 0 30px 30px;
     display: flex;
@@ -74,7 +66,6 @@
 }
 
 .iconContainer {
-    /* background-color: pink; */
     width: 150px;
     height: 100%;
     margin-right: -10px;
@@ -91,8 +82,6 @@
 }
 
 .graphicsContainer {
-    /* border: yellowgreen solid 1px; */
-    /* background-color: yellow; */
     width: 1200px;
     height: 100%;
     display: flex;
@@ -101,17 +90,13 @@
 }
 
 .barChartContainer {
-    /* border: pink solid 1px; */
     background-color: #fbfbfb;
     border-radius: 5px;
     width: 100%;
     height: 55%;
 }
 
-/* !! LES 3 GRAPHIQUES */
 .graphicsFlexContainer {
-    /* background-color: yellowgreen; */
-    /* border: blue solid 1px; */
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -127,8 +112,6 @@
 
 .radarChartContainer {
     background-color: #282d30;
-    /* ! couleur de la maquette */
-    /* background-color: #fbfbff; */
     border-radius: 5px;
     width: 31%;
     height: 100%;
@@ -144,17 +127,13 @@
 @media screen and (max-width: 1200px) {
     .globalContainer {
         padding: 60px 0;
-        /* ! régler le padding */
         margin: auto;
         width: fit-content;
-
     }
 
     .headerContainer {
-        /* height: fit-content; */
         width: fit-content;
         margin-right: 0;
-
     }
 
     .dataContainer {
@@ -162,43 +141,35 @@
         align-items: flex-start;
         height: fit-content;
         width: fit-content;
-
     }
 
     .nutrimentDataContainer {
-        /* background-color: black; */
         display: grid;
         width: 67vw;
         height: fit-content;
         margin: 40px auto;
         grid-template: 200px 200px / 300px 300px;
-
     }
 
     .nutrimentData {
-        /* background-color: black; */
         width: 300px;
         flex-direction: row;
-
     }
 
     .graphicsContainer {
         align-items: center;
         height: fit-content;
         width: fit-content;
-
     }
 
     .barChartContainer {
         width: 800px;
         height: 400px;
-
     }
 
     .graphicsFlexContainer {
         width: 100%;
         margin-top: 50px;
-
     }
 
     .lineChartContainer {
@@ -216,6 +187,5 @@
     .radialBarChartContainer {
         width: 250px;
         height: 250px;
-
     }
 }

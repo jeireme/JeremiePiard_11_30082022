@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
@@ -22,7 +23,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/jeireme/JeremiePiard_12_30082022"
+    "deploy": "gh-pages -d build -r https://github.com/jeireme/JeremiePiard_12_30082022",
+    "doc": "jsdoc -c jsdoc.json",
+    "generate-docs": "jsdoc --configure jsdoc.json --verbose"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +46,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "clean-jsdoc-theme": "^4.1.7",
+    "gh-pages": "^4.0.0",
+    "jsdoc": "^3.6.11"
   }
 }

@@ -22,6 +22,9 @@ const StyledLink = styled(Link)`
   color: white;
 `;
 
+/**
+ * The Navbar of the SportSee app
+ */
 function Navbar() {
   return (
     <NavbarContainer>

@@ -1,6 +1,13 @@
 import React from "react";
 import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer } from "recharts";
+import PropTypes from "prop-types";
 
+/**
+ * Component that render a line chart
+ * It shows the average duration of user sessions day by day
+ * @param {{object}} user Current user on website 
+ * @returns void
+ */
 function LineChartGraphic({ user }) {
   const data = [
     {
@@ -33,7 +40,13 @@ function LineChartGraphic({ user }) {
     },
   ];
 
-  const CustomTooltip = ({ payload, label, active }) => {
+  /**
+   * Function that render a custom tooltip on mouse hovering the graph
+   * @param {object} payload Contains the data of a selected day
+   * @param {boolean} active Becomes true when the user mouse hover the graph
+   * @returns void
+   */
+  const CustomTooltip = ({ payload, active }) => {
     if (active) {
       return (
         <div
@@ -106,5 +119,9 @@ function LineChartGraphic({ user }) {
     </ResponsiveContainer>
   );
 }
+
+LineChartGraphic.propTypes = {
+  user: PropTypes.object,
+};
 
 export default LineChartGraphic;

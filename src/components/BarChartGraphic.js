@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import {
   BarChart,
   Bar,
@@ -10,6 +12,12 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+/**
+ * Component that render the bar chart
+ * It shows the weight and the calories burned by the user
+ * @param {{object}} user Current user on website
+ * @returns void
+ */
 function BarChartGraphic({ user }) {
   const data = [
     {
@@ -49,7 +57,13 @@ function BarChartGraphic({ user }) {
     },
   ];
 
-  const CustomTooltip = ({ payload, label, active }) => {
+  /**
+   * Function that render a custom tooltip on mouse hovering the graph
+   * @param {string} label Name of the selected data
+   * @param {boolean} active Becomes true when the user mouse hover the graph
+   * @returns void
+   */
+  const CustomTooltip = ({ label, active }) => {
     if (active) {
       return (
         <div
@@ -138,5 +152,9 @@ function BarChartGraphic({ user }) {
     </ResponsiveContainer>
   );
 }
+
+BarChartGraphic.propTypes = {
+  user: PropTypes.object,
+};
 
 export default BarChartGraphic;

@@ -13,12 +13,19 @@ import { useParams } from "react-router-dom";
 import { getDataAPI } from "../../data/GetDataAPI";
 import "./Homepage.css";
 
+/**
+ * @file Homepage.js is the main file of the project where all the elements are displayed 
+ * @author Jérémie PIARD
+ * @see <a href="https://jeireme.github.io/JeremiePiard_12_30082022/" target="_blank"> Website </a>
+ */
+
+/**
+ * Homepage of the app SportSee
+ */
 function Homepage() {
   let [userData, setUserData] = useState({});
   let [isDataLoaded, setDataLoaded] = useState(false);
   let { id } = useParams();
-  let smallScreen = window.innerWidth <= 1200;
-  console.log(smallScreen);
 
   useEffect(() => {
     getDataAPI(id, userData, setUserData, setDataLoaded);
