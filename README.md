@@ -15,11 +15,15 @@ SportSee App is a sports coaching website that presents several graphics to supp
 
 First, follow the steps to install the local API you can find [here](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard).
 
-### 2. Launch the SportSee App
+Note: if the API isn't launched while the app is working, some mocked data will be used instead.
 
-In order to make the app works, you'll need to clone this repository on your computer, install the dependencies and run the server.
+## 2. Launch the SportSee App
 
+In order to make the app works, you'll need to clone this repository on your computer, install the dependencies and run the server:
+
+```
 $ git clone https://github.com/jeireme/JeremiePiard_12_30082022
 $ cd sportsee-app/
 $ npm install
 $ npm start
+```
