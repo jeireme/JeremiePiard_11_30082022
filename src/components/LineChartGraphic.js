@@ -1,15 +1,19 @@
 import React from "react";
-import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer } from "recharts";
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import PropTypes from "prop-types";
 
 /**
  * Component that render a line chart
  * It shows the average duration of user sessions day by day
- * @param {{object}} user Current user on website 
+ * @param {{object}} user Current user on website
  * @returns void
  */
 function LineChartGraphic({ user }) {
   const data = [
+    {
+      name: " ",
+      length: 0,
+    },
     {
       name: "L",
       length: user.sessionsLength[0].sessionLength,
@@ -37,6 +41,10 @@ function LineChartGraphic({ user }) {
     {
       name: "D",
       length: user.sessionsLength[6].sessionLength,
+    },
+    {
+      name: " ",
+      length: 60,
     },
   ];
 
@@ -69,16 +77,19 @@ function LineChartGraphic({ user }) {
   };
 
   return (
-    <ResponsiveContainer width="100%" height="100%">
+    <ResponsiveContainer width="100%" height="95%">
       <LineChart
-        width={500}
-        height={300}
         data={data}
-        margin={{
-          top: 100,
-          right: 0,
-          left: 0,
-          bottom: 15,
+        onMouseMove={(e) => {
+          if (e.isTooltipActive === true) {
+            let div = document.querySelector(".lineChartContainer");
+            let windowWidth = div.clientWidth;
+            let mouseXpercentage = Math.round(
+              (e.activeCoordinate.x / windowWidth) * 100
+            );
+            // @ts-ignore
+            div.style.background = `linear-gradient(90deg, #ff0000 ${mouseXpercentage}%, #e60000 ${mouseXpercentage}%, #e60000 100%)`;
+          }
         }}
       >
         <defs>
@@ -93,14 +104,21 @@ function LineChartGraphic({ user }) {
           tickLine={false}
           width={50}
           padding={{
-            left: 30,
-            right: 30,
+            left: -10,
+            right: -10,
           }}
           stroke="#F5F5F5"
         />
-        <Tooltip content={<CustomTooltip />} />
+        <YAxis
+          padding={{
+            top: 100,
+            bottom: 60,
+          }}
+          width={0}
+        />
+        <Tooltip content={<CustomTooltip />} cursor={false} />
         <Line
-          type="monotone"
+          type="natural"
           dataKey="length"
           stroke="url(#linearGradient)"
           strokeWidth={2}
