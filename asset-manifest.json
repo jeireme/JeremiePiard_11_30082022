@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JeremiePiard_12_30082022/static/css/main.9cd7bac2.css",
-    "main.js": "/JeremiePiard_12_30082022/static/js/main.8ff117e8.js",
+    "main.css": "/JeremiePiard_12_30082022/static/css/main.f4c2d125.css",
+    "main.js": "/JeremiePiard_12_30082022/static/js/main.9f658927.js",
     "static/media/photoUser18.jpg": "/JeremiePiard_12_30082022/static/media/photoUser18.253778d57ecd4c324fa7.jpg",
     "static/media/photoUser12.jpg": "/JeremiePiard_12_30082022/static/media/photoUser12.669a9c32da519948264c.jpg",
     "static/media/logo.svg": "/JeremiePiard_12_30082022/static/media/logo.7e048ed489e76ab60168bb8878645aad.svg",
@@ -15,11 +15,11 @@
     "static/media/yoga.svg": "/JeremiePiard_12_30082022/static/media/yoga.76760efccddf14928ee9263744c1b6e6.svg",
     "static/media/calories-icon.svg": "/JeremiePiard_12_30082022/static/media/calories-icon.5db5a3aff9bd8f441f49792782c8262e.svg",
     "static/media/bodybuilding.svg": "/JeremiePiard_12_30082022/static/media/bodybuilding.9d22814b98d0ca386d9ddacded4eae80.svg",
-    "main.9cd7bac2.css.map": "/JeremiePiard_12_30082022/static/css/main.9cd7bac2.css.map",
-    "main.8ff117e8.js.map": "/JeremiePiard_12_30082022/static/js/main.8ff117e8.js.map"
+    "main.f4c2d125.css.map": "/JeremiePiard_12_30082022/static/css/main.f4c2d125.css.map",
+    "main.9f658927.js.map": "/JeremiePiard_12_30082022/static/js/main.9f658927.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cd7bac2.css",
-    "static/js/main.8ff117e8.js"
+    "static/css/main.f4c2d125.css",
+    "static/js/main.9f658927.js"
   ]
 }
