@@ -1,6 +1,6 @@
 # Project 12 - SportSee App
 
-![Screenshot](https://i.ibb.co/prDJkFw/homepage-screen.png)
+![Screenshot](https://i.ibb.co/8N0J68D/screenshot.png)
 
 ## General informations
 
