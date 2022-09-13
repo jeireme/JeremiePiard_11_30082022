@@ -6,11 +6,12 @@ import {
   ResponsiveContainer,
   PolarAngleAxis,
 } from "recharts";
+import { useState } from "react";
 
 /**
  * Component that render the radial bar chart
  * It shows the user's progress with a percentage
- * @param {{object}} user Current user on website 
+ * @param {{object}} user Current user on website
  * @returns void
  */
 function RadialBarChartGraphic({ user }) {
@@ -20,6 +21,23 @@ function RadialBarChartGraphic({ user }) {
       value: user.score * 100,
     },
   ];
+
+  // eslint-disable-next-line
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+
+  React.useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+  });
 
   return (
     <ResponsiveContainer width="100%" height="100%">
@@ -49,9 +67,9 @@ function RadialBarChartGraphic({ user }) {
           Score
         </text>
         <text
-          x={window.innerWidth <= 1200 ? 130 : 195}
+          x={window.innerWidth <= 1200 ? 130 : 192}
           y={window.innerWidth <= 1200 ? 110 : 155}
-          fontSize="45"
+          fontSize="40"
           fontWeight="bold"
           textAnchor="middle"
           dominantBaseline="middle"
