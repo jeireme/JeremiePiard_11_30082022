@@ -1,4 +1,4 @@
-# Project 12 - SportSee App
+# SportSee App
 
 ![Screenshot](https://i.ibb.co/8N0J68D/screenshot.png)
 
